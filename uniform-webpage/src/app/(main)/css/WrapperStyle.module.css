@@ -1,0 +1,8 @@
+.wrapper {
+    min-height: 100vh;
+    background: linear-gradient(160deg, rgba(5, 13, 37, 0.22) 9.61%, #2F3341 85.91%);
+    /* background-color: #202020; */
+    padding: 50px 15px 10px 120px;
+    font-size: 1rem;
+    color: #fff;
+}
