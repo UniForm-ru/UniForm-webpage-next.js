@@ -6,6 +6,7 @@ import { scheduleData } from '@/scripts/fakeData'
 import style from './Schedule.module.css'
 import { useState, useEffect } from "react";
 import axios from 'axios';
+import DarkBlueContainer from '@/components/DarkBlueContainer/DarkBlueContainer';
 
 export default function Schedule() {
 
@@ -33,7 +34,7 @@ export default function Schedule() {
     <div>
       <div className={style.container}>
           {scheduleData.map((dayData, index) => (
-            <div className={style.day_container} key={index}>
+            <DarkBlueContainer>
               <h2>{dayData.day}</h2>
               <ul className={style.subjects}>
                 {dayData.subjects.map((subject, subIndex) => (
@@ -50,7 +51,7 @@ export default function Schedule() {
                   </li>
                 ))}
               </ul>
-            </div>
+            </DarkBlueContainer>
           ))}
         </div>
     </div>

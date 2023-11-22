@@ -1,4 +1,17 @@
-export const scheduleData:any = [
+interface scheduleDataInterface {
+  day:string;
+  subjects:subjectDataInterface[];
+}
+
+interface subjectDataInterface {
+  type:string;
+  time: { start:string, end:string };
+  subject:string;
+  location: { building: number, classroom: number };
+  teacher: string;
+}
+
+export const scheduleData: scheduleDataInterface[] = [
     {
       day: 'Понедельник',
       subjects: [

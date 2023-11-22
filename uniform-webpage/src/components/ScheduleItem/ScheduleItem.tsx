@@ -3,6 +3,7 @@
 /* eslint-disable react/prop-types */
 import { useState } from 'react'
 import style from './ScheduleItem.module.css'
+import GlassContainer from '../GlassContainer/GlassContainer';
 
 interface ScheduleItemProps {
     type: string;
@@ -30,7 +31,7 @@ export const ScheduleItem = ({ type, time, subject, location, teacher }:Schedule
     
     <div className={style.main_container}>
       <div className={!isRotate? style.front: style.front__rotate}>
-        <div className={style.subject__container}>
+        <GlassContainer flex column gap={10}>
           <div className={style.inner__constainer}>
               <span className={type == 'практика'? style.type__lect: style.type__sem}>{type}</span>
               <span className={style.time}>{time.start} - {time.end}</span>
@@ -44,7 +45,7 @@ export const ScheduleItem = ({ type, time, subject, location, teacher }:Schedule
             <p className={style.taecher}>Преподаватель {teacher}</p>
             <img onClick={() => setIsRotate(true)} className={style.edit__image} src="/edit.svg" alt="logo" />
           </div>
-        </div>
+        </GlassContainer>
       </div>
       <div className={!isRotate? style.back: style.back__rotate}>
         <textarea 
@@ -58,11 +59,11 @@ export const ScheduleItem = ({ type, time, subject, location, teacher }:Schedule
     </div>
   )
   : <>
-    <div className={style.subject__container}>
+    <GlassContainer>
       <div className={style.gap__container}>
-        <img className={style.gap__image} src="/gap.svg" alt="logo" />
-        <p className={style.subject}>{type}</p>
+          <img className={style.gap__image} src="/gap.svg" alt="logo" />
+          <p className={style.subject}>{type}</p>
       </div>
-    </div>
+    </GlassContainer>
   </>)
 }

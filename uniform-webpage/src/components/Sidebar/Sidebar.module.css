@@ -1,6 +1,6 @@
 .sidebar {
     min-height: 100vh;
-    width: 110px;
+    width: 100px;
     /* background: rgba(165, 165, 165, 0.13); */
     background: rgba(108, 107, 107, 0.78);
     position: fixed;

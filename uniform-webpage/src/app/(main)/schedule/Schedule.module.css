@@ -23,6 +23,6 @@
 
 @media (max-width: 1500px) {
     .container {
-        zoom: 80%;/*необязательно лучше это убрать*/
+        zoom: 80%;
     }
 }
