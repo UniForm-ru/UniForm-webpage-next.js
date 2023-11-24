@@ -157,3 +157,42 @@ export const scheduleData: scheduleDataInterface[] = [
       ],
     },
   ];
+
+export const universitysData: {name: string; logo: string}[] = [
+  {
+    name:'МИЭТ',
+    logo:'/unisFakeImg/miet.svg'
+  },
+  {
+    name:'ВШЭ',
+    logo:'/unisFakeImg/vse.svg'
+  },
+  {
+    name:'ЯрГУ им. П.Г.Демидова',
+    logo:'/unisFakeImg/demid.svg'
+  },
+  {
+    name:'МГУ',
+    logo:'/unisFakeImg/mgu.svg'
+  },
+]
+
+export const subjects:any = [
+  {
+    name: 'МИЭТ',
+    labels: ['Интерфейсы ВС', 'Аналоговая техника', 'АПС']
+  },
+  {
+    name: 'ВШЭ',
+    labels: ['Правоведение', 'Философия', 'Английский язык']
+  },
+  {
+    name: 'МГУ',
+    labels: ['Экономика', 'Программирование', 'Философия']
+  },
+  {
+    name: 'ЯрГУ им. П.Г.Демидова',
+    labels: ['Экономика', 'Правоведение', 'Философия', 'Французский язык']
+  },
+  
+]

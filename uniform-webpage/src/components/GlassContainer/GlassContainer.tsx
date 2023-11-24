@@ -7,9 +7,10 @@ interface GlassContainerProps {
   center?:boolean;
   column?: boolean;
   gap?: number;
+  onClickFunction?: () => void;
 }
 
-const GlassContainer: React.FC<GlassContainerProps> = ({ children, flex, gap, column, center}) => {
+const GlassContainer: React.FC<GlassContainerProps> = ({ children, flex, gap, column, center, onClickFunction}) => {
 
   const flexDirection:string = column? 'column': 'row';
   const contentAlign:string = center? 'center' : 'start';
@@ -17,6 +18,7 @@ const GlassContainer: React.FC<GlassContainerProps> = ({ children, flex, gap, co
 
   return (
     <div 
+      onClick={() => onClickFunction()}
       className={style.container} 
       style={
         flex && {

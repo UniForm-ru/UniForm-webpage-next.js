@@ -2,7 +2,12 @@ import style from './SidebarMenuItem.module.css';
 
 interface SidebarMenuItemProps {
     relocate: () => void;
-    item: any;
+    item: {
+        path?:string, 
+        icon:string,
+        icon_active?:string,
+        label:string,
+    };
     active: boolean;
 }
 

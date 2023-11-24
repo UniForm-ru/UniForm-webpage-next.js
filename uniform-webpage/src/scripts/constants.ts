@@ -43,3 +43,10 @@ export const menuItems: MenuItemInterface[] = [
         label:'Карта',
     }
 ];
+
+export const addedMenuItems:{icon:string, label:string}[] = [
+    {
+        icon:'/university.svg',
+        label:'Выбор ВУЗА'
+    }
+]
