@@ -7,7 +7,7 @@ interface GlassContainerProps {
   center?:boolean;
   column?: boolean;
   gap?: number;
-  onClickFunction?: () => void;
+  onClickFunction?: () => void | undefined;
 }
 
 const GlassContainer: React.FC<GlassContainerProps> = ({ children, flex, gap, column, center, onClickFunction}) => {

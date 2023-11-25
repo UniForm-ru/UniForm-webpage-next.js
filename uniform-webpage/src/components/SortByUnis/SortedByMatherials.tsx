@@ -13,7 +13,6 @@ interface SortByUnisProps {
 const SortByUnis = ({active, items}:SortByUnisProps) => {
 
     const [uniToSort, setUniToSort] = useState<string>('')
-    console.log(uniToSort);
     
 
   return (

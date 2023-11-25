@@ -10,8 +10,7 @@ export default function Studies() {
   
   const active = useContext(sortByUniOpenContext);
   const [uniToSort, setUniToSort] = useState<string>('МИЭТ');  
-  console.log(uniToSort);
-  
+
 
   return (
     <div>

@@ -196,3 +196,18 @@ export const subjects:any = [
   },
   
 ]
+
+export const events: {event:string, discription:string, image?: string}[] = [
+  {
+    event:'событие 1',
+    discription: 'описание события'
+  }, 
+  {
+    event:'событие 2',
+    discription: 'описание события'
+  },
+  {
+    event:'событие 3',
+    discription: 'описание события'
+  }
+]

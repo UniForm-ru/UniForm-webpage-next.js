@@ -18,11 +18,10 @@ const SortByDisciplines = ({active, items, uniToSort}:SortByUnisProps) => {
       setFilteredItems(filtered[0].labels);
     }, [uniToSort, items]);
 
-    console.log(filteredItems)
-  
+     
     return (
       <div className={active ? '' : style.hide}>
-        <h2 className={style.head}>Выбор университета для просмотра учебных материалов</h2>
+        <h2 className={style.head}>Учебные материалы {uniToSort}</h2>
         <main className={style.main}>
         {filteredItems.map((item, index) => (
               <GlassContainer key={index} flex center>

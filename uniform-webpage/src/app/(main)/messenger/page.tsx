@@ -1,7 +1,12 @@
+'use client'
+
+import GlassContainer from '@/components/GlassContainer/GlassContainer'
 import React from 'react'
 
 export default function Messenger() {
   return (
-    <div>Messenger</div>
+    <>
+      <GlassContainer flex center>в разработке</GlassContainer>
+    </>
   )
 }
